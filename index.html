@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e6d8eb1ea4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img
+            src="images/manish-high-resolution-logo-transparent.png"
+            class="logo"
+          />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="home">
+          <div class="header-text">
+            <h1>Hi,I'm <br /><span>Manish</span> Mehta</h1>
+            <p>Full-Stack Developer</p>
+            <a href="#contact" class="btn-1">Let's Talk</a>
+          </div>
+          <div class="home-img">
+            <div class="img-box">
+              <div class="img-item">
+                <img
+                  src="images/ChatGPT_Image_Apr_27__2025__10_44_38_AM-removebg-preview.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------about------>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/img.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Aspiring Full Stack Web Developer with a strong foundation in the
+              MERN stack and Flutter. Experienced in building responsive,
+              user-friendly applications and implementing modern design
+              principles. Passionate about solving real-world problems through
+              technology and continuously learning to improve technical
+              expertise. Currently seeking opportunities to contribute to
+              innovative projects and grow as a software professional.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onClick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onClick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onClick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul class="skill-list">
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Bootstrap</li>
+                <li>Tailwind CSS</li>
+                <li>Flutter</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>MySQL</li>
+                <li>Git & GitHub</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul class="experience-list">
+                <li>
+                  <span><b>2025</b></span
+                  ><br />
+                  Completed a
+                  <b>DSA with JAVA traning</b> focusing on understanding &
+                  solving DSA problems.
+                </li>
+                <li>
+                  <span><b>2024</b></span
+                  ><br />
+                  Built several <b>personal and academic projects</b> including
+                  a portfolio site, e-commerce store, and College management
+                  system.
+                </li>
+                <li>
+                  <span><b>2023</b></span
+                  ><br />
+                  Completed a
+                  <b>Full Stack Web Development traning</b> focusing on MERN
+                  stack and responsive UI design.
+                </li>
+                <li>
+                  <span><b>Currently</b></span
+                  ><br />
+                  Open to <b>internship and entry-level opportunities</b> in web
+                  or mobile development.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul class="education-list">
+                <li>
+                  <h3>B.Tech in Computer Science & Engineering</h3>
+                  <span class="year">2022 – 2026</span>
+                  <p>
+                    Swami Vivekanand Institute of Engineering and Technology
+                  </p>
+                </li>
+                <li>
+                  <h3>Intermediate (12th)</h3>
+                  <span class="year">2021</span>
+                  <p>Lord Buddha Secondary School</p>
+                </li>
+                <li>
+                  <h3>Matriculation (10th)</h3>
+                  <span class="year">2019</span>
+                  <p>Shree Janta Secondary School</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------- services--------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div class="service-card">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Responsive and modern websites built with HTML, CSS, JavaScript,
+              and MERN stack, ensuring performance and scalability.
+            </p>
+            <a href="#portfolio">View Projects</a>
+          </div>
+
+          <!-- App Development -->
+          <div class="service-card">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <h2>App Development</h2>
+            <p>
+              Cross-platform mobile applications using Flutter, designed for
+              smooth UI/UX and seamless user experiences.
+            </p>
+            <a href="#portfolio">View Projects</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- portfolio---- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img
+              src="images/Ad project title here._page-0001 (1).jpg"
+              alt="Portfolio Website"
+            />
+            <div class="layer">
+              <h3>Personal Portfolio Website</h3>
+              <p>
+                A modern portfolio site showcasing projects, skills, and
+                contact details. Optimized for performance and accessibility,
+                with clean component structure, smooth animations,made by using
+                HTML, CSS, JS.
+              </p>
+
+              <a href="#" 
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="images/Ad project title here._page-0001.jpg"
+              alt="E-commerce Website"
+            />
+            <div class="layer">
+              <h3>E-Commerce Website</h3>
+              <p>
+                A responsive shopping website with product listings, search &
+                filters, cart management, and secure checkout flow. Emphasizes
+                usability, clear information hierarchy, and scalable code
+                structure to support future features, made by using MERN stack.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <!-- College Management System Website -->
+          <div class="work">
+            <img
+              src="images/Project Proposal Doc in Warm Classic Style_page-0001.jpg"
+              alt="College Management System Website"
+            />
+            <div class="layer">
+              <h3>College Management System</h3>
+              <p>
+                A full-featured web platform to manage students, faculty,
+                courses, and examinations. Includes role-based access
+                (Admin/Teacher/Student), attendance tracking, marks upload,
+                timetable management, and downloadable reports. Built with a
+                responsive UI and scalable architecture for easy maintenance,
+                made by using MERN stack.
+              </p>
+              <a href="#" >
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#"  class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- contact--- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> er.manish212@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i> 9162232242</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/manish.mehta.683107?rdid=Mc6XwY0IqZqd9fZO&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19CBvRUPWV%2F#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/in/manish-mehta212/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/manish244845/?igsh=MTA3Z3o4bWplNjA3OQ%3D%3D#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="images/resume.pdf" download class="btn btn2"
+              >Downlode Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2025 by Manish | All Rights Reserved.</p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
